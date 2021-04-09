@@ -5,7 +5,7 @@ The angular project was generated with [Angular CLI](https://github.com/angular/
  
 ## Development container server
 
-Run as below for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run as below for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
 
 ```
 # Build
