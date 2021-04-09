@@ -5,13 +5,14 @@ The angular project was generated with [Angular CLI](https://github.com/angular/
  
 ## Development container server
 
-Run as below for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
+Run as below for a dev server. Navigate to `http://localhost:4201/`. 
+The app will automatically reload if you change any of the source files.
 
 ```
 # Build
 docker-compose build --no-cache
 
-# Start
+# Start (after that, you can modify some code and see the changes. Try to chamnge `src/app/xyz/xyz.component.html`)
 docker-compose up
 
 # List Services
@@ -30,6 +31,28 @@ To change the port used, please modify the files `package.json`, `docker-compose
 
 ```
 `ng serve`
+```
+
+## How this project was (initially) made?
+
+```
+# Install Angular Cli
+npm install -g @angular/cli
+
+# Create the initial workspace
+ng new my-angular11-experiments
+
+# Create a sample component
+ng generate component xyz
+
+# Bind de sample componente to root page at `src/app/app.component.html`:
+    <h1>XYZ</h1>
+    <app-xyz></app-xyz>
+
+# Create the `Dockerfile` and `docker-compose.yml`
+
+# Set the port at `package.json`, ex.:
+    "start": "ng serve --host=0.0.0.0 --port 4201",
 ```
 
 ## Code scaffolding
