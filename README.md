@@ -1,6 +1,6 @@
 # MyAngular11Experiments
 
-This project uses Angular 11 and Node.js. 
+This project uses the Angular web platform, hosted in a Node.js server and deployed in Docker container.
 The angular project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8 with single page (XYZ component)
  
 ## Development container server
@@ -12,7 +12,7 @@ The app will automatically reload if you change any of the source files.
 # Build
 docker-compose build --no-cache
 
-# Start (after that, you can modify some code and see the changes. Try to chamnge `src/app/xyz/xyz.component.html`)
+# Start (after that, you can modify some code and see the automatic changes. Try to chamnge `src/app/xyz/xyz.component.html`)
 docker-compose up
 
 # List Services
