@@ -1,12 +1,11 @@
 version: '3'
 services:
   my-angular11-experiment:
+    container_name: my-angular11-experiment
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "4201:4201"
-    container_name: my-angular11-experiment
+      - "4200:4200"
     volumes:
-       - .:/usr/src/app
-       - /usr/src/app/node_modules
+       - .:/app
