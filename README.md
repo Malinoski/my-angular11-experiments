@@ -1,8 +1,8 @@
 # MyAngular11Experiments
 
-This project uses the Angular web platform, Bootstrap and Fontawesome. 
-Hosted in a Node.js server in Docker container.
-The angular project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8 with single page (XYZ component)
+This project uses the Angular 11, Bootstrap 4.5 and Fontawesome 5.15. 
+Hosted in a Node.js 10 server in Docker container.
+The angular project was generated with [Angular CLI](https://github.com/angular/angular-cli).
  
 ## How to use
 
@@ -13,7 +13,7 @@ docker-compose build --no-cache
 docker-compose up -d
 ```
 
-Check at [http://localhost:4201/](http://localhost:4200/)
+Check at [http://localhost:4200/](http://localhost:4200/)
 
 * For restart or stop, run as follow:
 
@@ -29,3 +29,21 @@ docker-compose down
 * NPM packages: `package.json`
 
 * Javascript and CSS: `angular.json` 
+
+## Troubleshoots
+
+If encounter problem to install, try:
+
+```
+cd [ROOT_PROJECT]
+sudo npm install -g \
+    @angular/cli@11.2.8 \
+    @angular-devkit/build-angular@0.1102.8 \
+    bootstrap@4.1.3 \
+    jquery@3.3.1 \
+    popper.js@1.14.3 \
+    @fortawesome/fontawesome-free@5.15.3 \
+    --save 
+docker-compose build --no-cache
+docker-compose up -d
+```
