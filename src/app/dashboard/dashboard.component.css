@@ -1,0 +1,157 @@
+.left-content {
+  background-color: #4e73df;  /* Custom blue */
+  color: white;
+  max-width: 224px;
+  min-height: 100vh;
+}
+
+.left-content-item {
+  color: white;
+  font-size: .85rem;
+}
+
+.left-content-divider {
+  margin: 0 1rem 1rem;
+  border-top: 1px solid #eaecf4;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.left-content-submenu {
+  font-weight: 600;
+  font-size: .65rem;
+  text-transform: uppercase!important;
+  color: #ffffff66
+}
+
+.right-content {
+  background-color: #80808021  /* Very light grey */
+}
+
+.topbar {
+  height: 70px;
+  background-color: white;
+}
+
+.topbar .nav .nav-item .nav-link {
+   color: #d1d3e2;
+}
+
+.logo-project {
+  color: white;
+  transform: rotate(11deg);
+}
+
+.content-footer {
+  font-size: 0.8rem;
+  color: #85879678;
+}
+
+.btn-system {
+  background-color: #4e73df
+}
+
+.nav-item .nav-link .badge-counter {
+  position: absolute;
+  transform: scale(.7);
+  transform-origin: top right;
+  right: .5rem;
+  margin-top: -.25rem;
+}
+
+.icon-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-gray {
+  color: #858796!important;
+}
+
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.dropdown-item {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: .85rem;
+}
+
+.dropdown-header {
+  background-color: #4e73df;
+  border: 1px solid #4e73df;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #fff;
+  font-weight: 800;
+  font-size: .65rem;
+  text-transform: uppercase!important;
+}
+
+.topbar-divider {
+  width: 0;
+  border-right: 1px solid #e3e6f0;
+  height: calc(4.375rem - 2rem);
+  margin: auto 1rem;
+}
+
+.img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+
+.left-content-item-dropdown {
+  margin-left: .80rem;
+  margin-right: .80rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+.left-content-item-dropdown-item {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: #495057;
+}
+
+.hide-element {
+  text-align: center;
+  font-size: 3em;
+  margin-top: .9rem;
+}
+
+.togle-menu-top {
+  display: none
+}
+
+/* For medium devices (768px), use the specific css */
+@media (max-width: 768px) {
+  .left-content {
+    max-width: 104px;
+  }
+  .left-content-item {
+    text-align: center;
+  }
+  .left-content-item-header::before { /* Add a break line */
+    content: '\A';
+    white-space: pre;
+  }
+  .left-content-submenu {
+    text-align: center;
+  }
+  .left-content-item-dropdown {
+    margin-left: .3rem;
+    margin-right: .3rem;
+    text-align: center;
+  }
+  .dropdown-user {
+    margin-left: -14px;
+  }
+}
